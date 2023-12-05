@@ -52,7 +52,6 @@ const WeatherTile = () => {
   React.useEffect(()=> {
     fetchData();
   }, [])
-  console.log('weatherData: ', weatherData)
   
   const handleUpdateLatitude = React.useCallback((e)=> {
     setLatitude(e.currentTarget.value);
